@@ -1,0 +1,34 @@
+.card th{
+    background: #26a69a;
+    color: #fff;
+}
+.card table{
+    width: 100%;
+    min-width: 900px;
+}
+.card th, .card td{
+    padding: 10px;
+    text-align: left;
+}
+.home h2{
+    text-align: center;
+    margin: 0  0 10px 0;
+}
+.home tr:hover{
+    background: #f2f2f2;
+    cursor: pointer;
+}
+.amountTable, .table{
+    overflow-x: scroll;
+}
+.amountTable::-webkit-scrollbar ,.table::-webkit-scrollbar{
+    height: 10px;
+}
+.amountTable::-webkit-scrollbar-thumb, .table::-webkit-scrollbar-thumb{
+    background: rgba(179, 174, 174, 0.6);
+}
+@media only screen and (max-width: 600px){
+    .card table{
+        min-width: 700px;
+    }
+}

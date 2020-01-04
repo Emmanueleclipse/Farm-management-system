@@ -1,0 +1,37 @@
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    padding: 12px;
+    z-index: 10;
+}
+#nav{
+    margin-bottom: 90px;
+}
+nav h1{
+    margin: 0 22px 0 0;
+    flex-grow: 100;
+    font-size: 32px;
+}
+.menu{
+    cursor: pointer;
+}
+.menu span{
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 2px 0;
+}
+@media only screen and (max-width: 600px){
+    nav{
+        padding: 11px 12px !important;
+    }
+    #nav{
+        margin-bottom: 64px;
+    }
+    nav h1{
+        font-size: 23px;
+    }
+}

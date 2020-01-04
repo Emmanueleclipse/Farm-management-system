@@ -1,0 +1,60 @@
+.Add h2{
+    margin-top: 0;
+    text-align: center;
+}
+.Add select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    padding: 8px 0;
+}
+.formFlex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+}
+.formFlex .input-field{
+    width: 30%;
+    min-width: 260px;
+    flex-grow: 100;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.partsInfo{
+    display: flex;
+}
+.partsInfo .PartName{
+    flex-grow: 100;
+}
+.partsInfo .PartQty{
+    width: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#loader{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 600px){
+    .partsInfo .PartQty {
+        max-width: 42px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .partsInfo .PartAmount {
+        max-width: 64px;
+    }
+}
+@media only screen and (max-width: 370px){
+    .formFlex .input-field{
+        min-width: 200px;
+    }
+}

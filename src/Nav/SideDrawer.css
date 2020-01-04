@@ -1,0 +1,56 @@
+.SideDrawer{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 270px;
+    animation: SideDrawer ease 0.3s forwards;
+    z-index: 100;
+}
+@keyframes SideDrawer{
+    0%{
+        left: -300px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.companies{
+    max-height: 40px;
+    overflow: hidden;
+    transition: ease-in 0.2s all;
+}
+.border{
+    border: 1px solid #e0e0e0;
+    margin: 0 8px;
+    background: #e0e0e0;
+}
+.open{
+    max-height: 300px !important;
+}
+.companies span{
+    padding: 9px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+.open span{
+    background: #f2f2f2;
+}
+.companies span div{
+    border-top: 5px solid;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: ease-in 0.2s all;
+}
+.open span div{
+    transform: rotate(90deg);
+}
+.SideDrawer a{
+    display: block;
+    padding: 9px;
+    margin: 2px 0;
+}
+.SideDrawer a:hover{
+    background: #f2f2f2;
+}

@@ -1,0 +1,80 @@
+.Print{
+    background: #fff;
+    font-weight: 400;
+    padding: 12px 16px;
+}
+@page { size: auto;  margin: 0mm; }
+#invoice{
+    text-align: right;
+}
+@media print { 
+    #nav, nav{
+        display: none;
+        z-index: -1;
+    }
+} 
+.Print p{
+    margin: 4px 0;
+}
+.Print table{
+    width: 100%;
+}
+.Print h1{
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 6px;
+}
+.Print h3{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+.Print th, .Print td{
+    padding: 6px;
+    min-height: 24px;
+    font-size: 13px;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: left;
+}
+#companyNa{
+    color: #000000;
+    margin-right: 159px;
+    flex-grow: 100;
+    font-size: 21px;
+}
+.Print .companyNa{
+    display: flex;
+    align-items: center;
+}
+.Print .companyNa b{
+    max-width: 159px;
+}
+.Print .sign{
+    border-bottom: 1.3px solid rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    width: 186px;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+.Print footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.Print .table table{
+    min-width: 750px;
+}
+@media only screen and (max-width: 600px){
+    .Print h1{
+        font-size: 22px;
+        margin: 0 0 8px 0
+    }
+    #companyNa{
+        font-size: 17px;
+        margin-right: 0;
+    }
+    .Print footer{
+        display: none;
+    }
+}
